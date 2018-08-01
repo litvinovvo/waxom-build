@@ -50,7 +50,7 @@
 		<header class="header header_in-block">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-md-4">
+					<div class="col-8 col-md-3 header__logo">
 						<div class="logo">
 							<a href="#" class="logo__link">
 								<svg width="64" height="56" class="logo__icon"><use xlink:href="assets/images/icon.svg#icon_logo"></use></svg>
@@ -58,49 +58,81 @@
 							</a>
 						</div>
 					</div>
-					<nav class="col-md-7">
-						<ul class="top-menu">
-							<li class="top-menu__item">
-								<a href="#" class="top-menu__link">Home</a>
-								<a href="#" class="top-menu__link">About Us</a>
-								<a href="#" class="top-menu__link top-menu__link_active">Portfolio</a>
-								<a href="#" class="top-menu__link">Features</a>
-								<a href="#" class="top-menu__link">Blog</a>
-								<a href="#" class="top-menu__link">Pricing</a>
-								<a href="#" class="top-menu__link">Shortcodes</a>
-								<a href="#" class="top-menu__link">Contact</a>
-							</li>
-						</ul>
+					<input type="checkbox" id="menu-btn" class="burger__switch" />
+					<div class="col-4 burger__btn-wrapper">
+						<button class="burger__btn">
+							<label for="menu-btn" class="burger__icon"></label>
+						</button>
+					</div>
+					<nav class="col-md-9 header__menu no-paddings">
+						<div class="row align-items-center">
+							<ul class="top-menu col-md-10">
+								<li class="top-menu__item">
+									<a href="#" class="top-menu__link">Home</a>
+								</li>
+								<li class="top-menu__item">
+									<a href="#" class="top-menu__link">About Us</a>
+								</li>
+								<li class="top-menu__item">
+									<a href="#" class="top-menu__link top-menu__link_active">Portfolio</a>
+								</li>
+								<li class="top-menu__item">
+									<a href="#" class="top-menu__link">Features</a>
+								</li>
+								<li class="top-menu__item">
+									<a href="#" class="top-menu__link">Blog</a>
+								</li>
+								<li class="top-menu__item">
+									<a href="#" class="top-menu__link">Pricing</a>
+								</li>
+								<li class="top-menu__item">
+									<a href="#" class="top-menu__link">Shortcodes</a>
+								</li>
+								<li class="top-menu__item">
+									<a href="#" class="top-menu__link">Contact</a>
+								</li>
+							</ul>
+							<div class="btn-group col-md-2">
+								<div class="row no-gutters justify-content-center">
+									<div class="col-auto">
+										<a href="#" class="btn-group__item">
+											<svg width="18" height="24"><use xlink:href="assets/images/icon.svg#icon_cart"></use></svg>
+										</a>
+									</div>
+									<div class="col-auto">
+										<a href="#" class="btn-group__item">
+											<svg width="24" height="24"><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="search-form col-md-12 hidden">
+								<form action="#" method="post">
+									<input type="text" placeholder="keywords" class="search-form__input" />
+								</form>
+							</div>
+						</div>
 					</nav>
-					<div class="btn-group col-md-1">
-						<a href="#" class="btn-group__item">
-							<svg width="18" height="24"><use xlink:href="assets/images/icon.svg#icon_cart"></use></svg>
-						</a>
-						<a href="#" class="btn-group__item">
-							<svg width="24" height="24"><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
-						</a>
-					</div>
-					<div class="search-form col-md-12 hidden">
-						<form action="#" method="post">
-							<input type="text" placeholder="keywords" class="search-form__input" />
-						</form>
-					</div>
 				</div>
 			</div>
 		</header>
-		<main>
+		<main class="page__main">
 			<section>
 				<div class="slider container-fluid no-paddings">
 					<div class="slider__slides">
 						<div class="slide">
 							<div style="background-image: url(img/slide_mountain_w1920.jpg);" class="slide__back-img"></div>
-							<div class="slide__content container row align-items-center justify-content-center">
-								<div class="col-auto-12">
-									<div class="slide__pre-title">Unique and Modern Design</div>
-									<div class="slide__title">Portfolio PSD Template</div>
-									<p class="slide__p">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim
-										assum.</p>
-									<a href="#" class="btn slide__btn">Get Started</a>
+							<div class="container">
+								<div class="row align-items-center justify-content-center slide__container">
+									<div class="col-auto-12">
+										<div class="slide__content">
+											<h4 class="slide__pre-title">Unique and Modern Design</h4>
+											<h3 class="slide__title">Portfolio PSD Template</h3>
+											<p class="slide__p">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim
+												assum.</p>
+											<a href="#" class="btn slide__btn">Get Started</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -131,28 +163,28 @@
 				<div class="services">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-3">
+							<div class="col-md-6 col-lg-3">
 								<a href="#" class="services__item">
 									<svg width="49" height="49" class="services__icon"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
 									<h3 class="services__title">Web & App Design</h3>
 									<p class="services__p">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
 								</a>
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-6 col-lg-3">
 								<a href="#" class="services__item">
 									<svg width="44" height="49" class="services__icon"><use xlink:href="assets/images/icon.svg#icon_stack"></use></svg>
 									<h3 class="services__title">Development</h3>
 									<p class="services__p">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
 								</a>
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-6 col-lg-3">
 								<a href="#" class="services__item">
 									<svg width="44" height="49" class="services__icon"><use xlink:href="assets/images/icon.svg#icon_cogwheel"></use></svg>
 									<h3 class="services__title">Customization</h3>
 									<p class="services__p">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
 								</a>
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-6 col-lg-3">
 								<a href="#" class="services__item">
 									<svg width="52" height="49" class="services__icon"><use xlink:href="assets/images/icon.svg#icon_case"></use></svg>
 									<h3 class="services__title">Marketing</h3>
@@ -218,7 +250,7 @@
 							<button class="projects__filter-btn">Illustration</button>
 							<button class="projects__filter-btn">Photography</button>
 						</div>
-						<div class="projects__list row">
+						<div class="projects__list row justify-content-center">
 							<div class="col-md-4">
 								<a href="#" class="projects__item">
 									<div class="projects__item-content">
@@ -340,8 +372,283 @@
 					</div>
 				</div>
 			</section>
+			<section>
+				<div class="mobile container-fluid no-paddings">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-7 mobile__content order-lg-7">
+								<h2 class="mobile__title">Excellent for Mobile Devices.</h2>
+								<p class="mobile__p">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+									consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi,
+									qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+								<ul class="mobile__list">
+									<li class="mobile__list-item">
+										<svg width="21" height="21" class="mobile__list-icon"><use xlink:href="assets/images/icon.svg#icon_list-marker"></use></svg>
+										<span class="mobile__list-text">Nam liber tempor cum soluta nobis eleifend option;</span>
+									</li>
+									<li class="mobile__list-item">
+										<svg width="21" height="21" class="mobile__list-icon"><use xlink:href="assets/images/icon.svg#icon_list-marker"></use></svg>
+										<span class="mobile__list-text">Option congue nihil imperdiet doming id quod mazim placerat facer;</span>
+									</li>
+									<li class="mobile__list-item">
+										<svg width="21" height="21" class="mobile__list-icon"><use xlink:href="assets/images/icon.svg#icon_list-marker"></use></svg>
+										<span class="mobile__list-text">Eodem modo typi, qui nunc nobis videntur parum futurum;</span>
+									</li>
+									<li class="mobile__list-item">
+										<svg width="21" height="21" class="mobile__list-icon"><use xlink:href="assets/images/icon.svg#icon_list-marker"></use></svg>
+										<span class="mobile__list-text">Investigationes demonstraverunt lectores</span>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-5 order-lg-5">
+								<a href="#" class="mobile__link">
+									<img src="img/iphone.png" alt="waxom on mobile phone" class="img-fluid mobile__img" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="stats container-fluid no-paddings">
+					<div class="container">
+						<div class="row align-items-center justify-content-center">
+							<div class="col-md-6 col-lg-2 stats__item">
+								<svg width="44" height="44" class="stats__icon"><use xlink:href="assets/images/icon.svg#icon_clients"></use></svg>
+								<div class="stats__value">3587</div>
+								<div class="stats__description">satisfied clients</div>
+							</div>
+							<div class="col-md-6 col-lg-2 stats__item">
+								<svg width="48" height="44" class="stats__icon"><use xlink:href="assets/images/icon.svg#icon_cup"></use></svg>
+								<div class="stats__value">207</div>
+								<div class="stats__description">cups of coffee</div>
+							</div>
+							<div class="col-md-6 col-lg-2 stats__item">
+								<svg width="44" height="44" class="stats__icon"><use xlink:href="assets/images/icon.svg#icon_message"></use></svg>
+								<div class="stats__value">2600</div>
+								<div class="stats__description">blog posts</div>
+							</div>
+							<div class="col-md-6 col-lg-2 stats__item">
+								<svg width="44" height="44" class="stats__icon"><use xlink:href="assets/images/icon.svg#icon_heart"></use></svg>
+								<div class="stats__value">873</div>
+								<div class="stats__description">likes</div>
+							</div>
+							<div class="col-md-6 col-lg-2 stats__item">
+								<svg width="54" height="44" class="stats__icon"><use xlink:href="assets/images/icon.svg#icon_dish"></use></svg>
+								<div class="stats__value">900</div>
+								<div class="stats__description">we launched</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="posts">
+					<div class="container">
+						<h2 class="posts__title">Recent Posts.</h2>
+						<p class="posts__p">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus,
+							qui sequitur mutationem consuetudium.</p>
+						<div class="posts__list row justify-content-center">
+							<div class="col-lg-4">
+								<a href="#" class="posts__item">
+									<div class="posts__item-content">
+										<div class="posts__item-hover-container">
+											<img src="img/post1.jpg" alt="post preview" class="img-fluid posts__item-img" />
+											<div class="posts__date-container">
+												<div class="posts__date-date">30</div>
+												<div class="posts__date-month">Sep.</div>
+											</div>
+										</div>
+										<div class="posts__item-description">
+											<h4 class="posts__item-title">Lorem ipsum dolor sit amet</h4>
+											<p class="posts__item-p">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+											<span class="posts__link">Read More</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="posts__item">
+									<div class="posts__item-content">
+										<div class="posts__item-hover-container">
+											<img src="img/post2.jpg" alt="post preview" class="img-fluid posts__item-img" />
+											<div class="posts__date-container">
+												<div class="posts__date-date">30</div>
+												<div class="posts__date-month">Sep.</div>
+											</div>
+										</div>
+										<div class="posts__item-description">
+											<h4 class="posts__item-title">Lorem ipsum dolor sit amet</h4>
+											<p class="posts__item-p">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+											<span class="posts__link">Read More</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="posts__item">
+									<div class="posts__item-content">
+										<div class="posts__item-hover-container">
+											<img src="img/post3.jpg" alt="post preview" class="img-fluid posts__item-img" />
+											<div class="posts__date-container">
+												<div class="posts__date-date">30</div>
+												<div class="posts__date-month">Sep.</div>
+											</div>
+										</div>
+										<div class="posts__item-description">
+											<h4 class="posts__item-title">Lorem ipsum dolor sit amet</h4>
+											<p class="posts__item-p">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+											<span class="posts__link">Read More</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="posts__pagination">
+							<a href="#" class="posts__prev-page posts__disabled-page">
+								<svg width="22" height="22"><use xlink:href="assets/images/icon.svg#icon_left-outline"></use></svg>
+							</a>
+							<a href="#" class="posts__next-page">
+								<svg width="22" height="22"><use xlink:href="assets/images/icon.svg#icon_right-outline"></use></svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="partners container-fluid no-paddings">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-md-3 text-center">
+								<a href="#" class="partners__link">
+									<img src="img/partner1.png" alt="partner logo" class="partners__img img-fluid" />
+								</a>
+							</div>
+							<div class="col-md-3 text-center">
+								<a href="#" class="partners__link">
+									<img src="img/partner2.png" alt="partner logo" class="partners__img img-fluid" />
+								</a>
+							</div>
+							<div class="col-md-3 text-center">
+								<a href="#" class="partners__link">
+									<img src="img/partner3.png" alt="partner logo" class="partners__img img-fluid" />
+								</a>
+							</div>
+							<div class="col-md-3 text-center">
+								<a href="#" class="partners__link">
+									<img src="img/partner4.png" alt="partner logo" class="partners__img img-fluid" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
-		<div class="footer"></div>
+		<div class="footer">
+			<div class="footer__main">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 footer__col">
+							<div class="logo footer__logo">
+								<a href="#" class="logo__link">
+									<svg width="64" height="56" class="logo__icon"><use xlink:href="assets/images/icon.svg#icon_logo"></use></svg>
+									<h2 class="logo__text">Waxom</h2>
+								</a>
+							</div>
+							<p class="footer__p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+								magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+							<a
+							 href="#" class="footer__link footer__read-more">Read More</a>
+						</div>
+						<div class="col-md-3 footer__col">
+							<h3 class="footer__col-header">Recent Posts </h3>
+							<a href="#" class="footer__post">
+								<div class="footer__post-date">September 08, 2015</div>
+								<p class="footer__p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+							</a>
+							<hr class="footer__hr" />
+							<a href="#" class="footer__post">
+								<div class="footer__post-date">September 08, 2015</div>
+								<p class="footer__p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+							</a>
+							<hr class="footer__hr" />
+							<a href="#" class="footer__post">
+								<div class="footer__post-date">September 08, 2015</div>
+								<p class="footer__p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+							</a>
+						</div>
+						<div class="col-md-3 footer__col">
+							<h3 class="footer__col-header">Our Twitter </h3>
+							<p class="footer__p">
+								<a href="#" class="footer__link footer__link_twitter">@waxom </a>Cum soluta nobis eleifend option congue nihil imperdiet doming </p>
+							<div class="footer__post-date">
+								<a href="#" class="footer__link">3 mins ago</a>
+							</div>
+							<hr class="footer__hr" />
+							<p class="footer__p">
+								<a href="#" class="footer__link footer__link_twitter"> </a>Mirum est
+								<a href="#" class="footer__link footer__link_twitter">#envato </a>notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+							<div class="footer__post-date">
+								<a href="#" class="footer__link">5 hours ago</a>
+							</div>
+							<hr class="footer__hr" />
+							<p class="footer__p">
+								Soluta nobis option
+								<a href="#" class="footer__link">bit.ly/1Hniso7 </a>
+							</p>
+							<div class="footer__post-date">
+								<a href="#" class="footer__link">20 days ago </a>
+							</div>
+						</div>
+						<div class="col-md-3 footer__col">
+							<h3 class="footer__col-header">Dribble Widget</h3>
+							<div class="row no-gutters footer__dribble-container">
+								<div class="col-6 col-sm-6 col-md-12 col-lg-6 text-center">
+									<a href="#" class="footer__link footer__link_dribble">
+										<img src="img/dribble1.jpg" alt="dribble post preview" class="img-fluid footer__img_dribble" />
+									</a>
+								</div>
+								<div class="col-6 col-sm-6 col-md-12 col-lg-6 text-center">
+									<a href="#" class="footer__link footer__link_dribble">
+										<img src="img/dribble2.jpg" alt="dribble post preview" class="img-fluid footer__img_dribble" />
+									</a>
+								</div>
+								<div class="col-6 col-sm-6 col-md-12 col-lg-6 text-center">
+									<a href="#" class="footer__link footer__link_dribble">
+										<img src="img/dribble3.jpg" alt="dribble post preview" class="img-fluid footer__img_dribble" />
+									</a>
+								</div>
+								<div class="col-6 col-sm-6 col-md-12 col-lg-6 text-center">
+									<a href="#" class="footer__link footer__link_dribble">
+										<img src="img/dribble4.jpg" alt="dribble post preview" class="img-fluid footer__img_dribble" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copy">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7 footer__copy-col">Copyright &copy; 2015
+							<a href="#" class="footer__link">Waxom</a>
+							<span class="footer__vhr"></span>
+							<a href="#" class="footer__link footer__link_dark">Privacy Policy</a>
+							<span class="footer__vhr"></span>
+							<a href="#" class="footer__link footer__link_dark">FAQ</a>
+							<span class="footer__vhr"></span>
+							<a href="#" class="footer__link footer__link_dark">Support</a>
+						</div>
+						<div class="col-md-5 text-right footer__copy-col">Designed by
+							<a href="#" class="footer__link">ThemeFire</a>
+							<span class="footer__vhr"></span>Only on
+							<a href="#" class="footer__link">Envato Market </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="assets/scripts/app.min.js"></script>
 	</body>
 
